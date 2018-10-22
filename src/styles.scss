@@ -1,0 +1,83 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+::-webkit-scrollbar { width: 6px; height: 6px;}
+::-webkit-scrollbar-thumb { background: #c0c0c0 }
+
+
+
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.no_padding {
+  padding: 0;
+}
+
+
+
+.example-icon { padding: 0 14px; }
+.example-spacer { flex: 1 1 auto; }
+
+
+.mat-drawer-content { flex: 1; }
+
+
+
+// MAterial icons setup
+
+.material-icons.orange600 { color: #FB8C00; }
+.material-icons.fb4400 { color: #fb4400; }
+.material-icons.green { color: green; }
+.material-icons.blueviolet { color: blueviolet; }
+.material-icons.yellow { color: rgb(207, 204, 0); }
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-92 { font-size: 92px; }
+
+
+// Ovveride
+.mat-fab .mat-button-wrapper {
+  padding: 0 !important;
+}
+
+
+.mat-card {
+  margin: 4px !important;
+}
+
+
+
+// Expension Panel Enhancements
+
+.mat-expansion-panel-header { max-height: 48px;}
+
+.mat-expansion-indicator {
+  transition: all linear 200ms;
+  margin-bottom: 4px;
+}
+
+.mat-expansion-panel-body {
+  padding: 0 !important;
+}
+
+
+
+

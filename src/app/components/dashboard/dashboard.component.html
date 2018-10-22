@@ -1,0 +1,202 @@
+<app-loading></app-loading>
+
+<h2 style="font-weight: lighter; margin: 16px 8px;">Flex Responsive Layout With Wrapping</h2>
+
+<div fxLayout="column" fxLayout.gt-sm="row wrap" fxFlexAlign="left">
+  <div fxFlex="25" fxFlex.md="50" *ngFor="let item of ['mat-teal','mat-red','mat-purple','mat-indigo', 'mat-teal']">
+    <mat-card class="card-widget {{item}} mat-card">
+      <div mat-card-widget>
+        <div mat-card-float-icon><mat-icon>local_offer</mat-icon></div>
+        <div>
+          <h2 mat-card-widget-title>103</h2>
+          <p>Campaigns</p>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>
+
+<h2 style="font-weight: lighter; margin: 16px 8px;">Responsice Grid</h2>
+
+<div fxLayout="column" fxLayout.gt-sm="row wrap" fxFlexAlign="center">
+
+  <div fxFlex="50" *ngFor="let t of [1,3,4,5]">
+    <mat-card class="card-widget mat-card">
+      <div fxLayout="row" fxFlexAlign="center center">
+        <mat-card-header>
+          <img matcardavatar src="//material.angular.io/assets/img/examples/shiba1.jpg">
+          <div class="mat-card-header-text">
+            <mat-card-subtitle>
+              Revenue &nbsp; <span class="font-weight-bold mat-text-primary">+458,90</span>
+            </mat-card-subtitle>
+            <mat-card-title>Gerald Morris</mat-card-title>
+          </div>
+        </mat-card-header>
+        <span class="example-spacer"></span>
+        <button class="mr-1" mat-icon-button><mat-icon>more_vert</mat-icon></button>
+      </div>
+
+      <div class="card-image-header" style="background-image: url(//www.w3schools.com/css/mountain.jpg); height: 240px;"></div>
+      <mat-card-content  class="mat-card-content">
+        <button class="mr-1" color="warn" mat-fab mat-fab-card-float><mat-icon>share</mat-icon></button>
+        <p class="ma-0">
+          Phileas Fogg and Aouda went on board, where they found Fix already installed.
+          Below deck was a square cabin, of which the walls bulged out in the form of cots,
+          above a circular divan; in the centre was a table provided with a swinging lamp.
+        </p>
+      </mat-card-content>
+      <hr>
+      <mat-card-actions>
+        <div  fxLayout="row">
+          <button  mat-icon-button><mat-icon>share</mat-icon></button>
+          <button  mat-icon-button><mat-icon>favorite</mat-icon></button>
+          <span  class="example-spacer"></span>
+          <button mat-button>More Info</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+</div>
+
+<h2 style="font-weight: lighter; margin: 16px 8px;">3 Column Flexible item</h2>
+
+<div fxLayout="column" fxLayout.gt-sm="row wrap" fxFlexAlign="center">
+  <div fxFlex="33.333333" *ngFor="let t of [1,3,4,5,5,6]">
+    <mat-card>
+      <mat-card-subtitle fxLayout="row" fxFlexAlign="start center">
+        Revenue &nbsp; <span class="font-weight-bold mat-text-primary">+458,90</span>
+        <span  class="example-spacer"></span>
+        <button mat-icon-button>
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-card-subtitle>
+      <mat-card-content>
+        Chart will go here
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+
+
+
+<mat-card>
+  <mat-card-content>
+    <div class="mb-2" fxLayout="row" fxFlexAlign="start center">
+      <div fxFlex>
+        <h1  class="mt-0 mb-0">London, UK</h1>
+        <h2  class="mt-0 mb-0">Saturday 2:00 AM</h2>
+        <p  class="mat-text-muted mt-0 mb-0">Mostly Sunny</p>
+      </div>
+      <span fxFlex></span>
+      <div class="text-xs-right" fxFlex>
+        <h1  class="text-xxl mt-0 mb-0">
+          <span class="pe-is-w-moon-sea mat-text-accent"></span>
+          <span>6</span>
+        </h1>
+      </div>
+    </div>
+    <div class="mb-2 text-md" fxLayout="row" layout-align="center">
+      <div class="pr-1" fxFlex>
+        <div fxLayout="row">
+          <span>Pressure</span>
+          <span fxFlex=""></span>
+          <span>30.09</span>
+          <span>hPa</span>
+        </div>
+
+        <div fxLayout="row">
+          <span>Visibility</span>
+          <span fxFlex></span>
+          <span>11.27</span>
+          <span>km</span>
+        </div>
+
+        <div fxLayout="row">
+          <span>Light</span>
+          <span fxFlex></span>
+          <span>0.00</span>
+        </div>
+
+        <div fxLayout="row">
+          <span>Light</span>
+          <span fxFlex></span>
+          <span>16</span>
+          <span>C</span>
+        </div>
+      </div>
+      <div class="pl-1" fxFlex>
+        <div fxLayout="row">
+          <span>Humidity</span>
+          <span fxFlex></span>
+          <span>94</span>
+          <span>%</span>
+        </div>
+
+        <div fxLayout="row">
+          <span>Precp.</span>
+          <span fxFlex></span>
+          <span></span>
+          <span>mm</span>
+        </div>
+
+        <div fxLayout="row">
+          <span>Snow Depth</span>
+          <span fxFlex></span>
+        </div>
+
+        <div fxLayout="row">
+          <span>Wind Gust</span>
+          <span fxFlex></span>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-content  class="mat-indigo">
+    <div  class="text-xs-center" fxLayout="row">
+      <div fxFlex>
+        <div class="text-md">6 km/h</div>
+        <div class="text-md pb-xs"><mat-icon>call_received</mat-icon></div>
+        <div class="text-md">MON</div>
+        <h1 class="block mt-0 mb-0 pb-xs"><i class="pe-is-w-blizzard"></i></h1>
+        <strong class="degree-value">10</strong>
+      </div>
+      <div fxFlex>
+        <div class="text-md">6 km/h</div>
+        <div class="text-md pb-xs"><mat-icon>call_received</mat-icon></div>
+        <div class="text-md">TUE</div>
+        <h1 class="block mt-0 mb-0 pb-xs"><i class="pe-is-w-eclipse-1"></i></h1>
+        <strong class="degree-value">8</strong>
+      </div>
+      <div fxFlex>
+        <div class="text-md">6 km/h</div>
+        <div class="text-md pb-xs"><mat-icon>call_made</mat-icon></div>
+        <div class="text-md">WED</div>
+        <h1 class="block mt-0 mb-0 pb-xs"><i class="pe-is-w-fog-3"></i></h1>
+        <strong  class="degree-value">6</strong>
+      </div>
+      <div fxFlex>
+        <div class="text-md">6 km/h</div>
+        <div class="text-md pb-xs"><mat-icon>arrow_upward</mat-icon></div>
+        <div class="text-md">THU</div>
+        <h1 class="block mt-0 mb-0 pb-xs"><i class="pe-is-w-hail-day-2"></i></h1>
+        <strong class="degree-value">6</strong>
+      </div>
+      <div fxFlex>
+        <div class="text-md">6 km/h</div>
+        <div class="text-md pb-xs"><mat-icon>call_received</mat-icon></div>
+        <div class="text-md">FRI</div>
+        <h1 class="block mt-0 mb-0 pb-xs"><i class="pe-is-w-mix-rainfall-1"></i></h1>
+        <strong  class="degree-value">9</strong>
+      </div>
+      <div fxFlex>
+        <div class="text-md">6 km/h</div>
+        <div class="text-md pb-xs"><mat-icon>arrow_forward</mat-icon></div>
+        <div class="text-md">SAT</div>
+        <h1 class="block mt-0 mb-0 pb-xs"><i  class="pe-is-w-moon-sea"></i></h1>
+        <strong class="degree-value">8</strong>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

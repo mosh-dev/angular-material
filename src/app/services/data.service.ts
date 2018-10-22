@@ -1,8 +1,7 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable()
 export class DataService {
-
 
 
   private menu = [
@@ -20,7 +19,7 @@ export class DataService {
             {name: 'Sub sub item 2', route: ''}
           ]
         },
-        { name: 'Sub item 2', route: 'allInvoice', icon: 'dashboard', subitems: [] }
+        {name: 'Sub item 2', route: 'allInvoice', icon: 'dashboard', subitems: []}
       ]
     },
     {
@@ -30,10 +29,10 @@ export class DataService {
     {
       name: 'Apps', route: 'dashboard', icon: 'apps',
       items: [
-        { name: 'Media', route: 'charts', icon: 'dashboard', subitems: [] },
-        { name: 'Chat', route: '', icon: 'dashboard', subitems: [] },
-        { name: 'Messages', route: '', icon: 'dashboard', subitems: [] },
-        { name: 'Social', route: '', icon: 'dashboard', subitems: [] }
+        {name: 'Media', route: 'charts', icon: 'dashboard', subitems: []},
+        {name: 'Chat', route: '', icon: 'dashboard', subitems: []},
+        {name: 'Messages', route: '', icon: 'dashboard', subitems: []},
+        {name: 'Social', route: '', icon: 'dashboard', subitems: []}
       ]
     },
     {
@@ -43,35 +42,35 @@ export class DataService {
     {
       name: 'Material', route: 'dashboard', icon: 'pie_chart',
       items: [
-        { name: 'Media', route: 'charts', icon: 'dashboard', subitems: [] },
-        { name: 'Chat', route: '', icon: 'dashboard', subitems: [] },
-        { name: 'Messages', route: '', icon: 'dashboard', subitems: [] },
-        { name: 'Social', route: '', icon: 'dashboard', subitems: [] }
+        {name: 'Media', route: 'charts', icon: 'dashboard', subitems: []},
+        {name: 'Chat', route: '', icon: 'dashboard', subitems: []},
+        {name: 'Messages', route: '', icon: 'dashboard', subitems: []},
+        {name: 'Social', route: '', icon: 'dashboard', subitems: []}
       ]
     },
     {
       name: 'Pages', route: 'dashboard', icon: 'person',
       items: [
-        { name: 'Media', route: 'charts', icon: 'dashboard', subitems: [] },
-        { name: 'Chat', route: '', icon: 'dashboard', subitems: [] },
-        { name: 'Messages', route: '', icon: 'dashboard', subitems: [] },
-        { name: 'Social', route: '', icon: 'dashboard', subitems: [] }
+        {name: 'Media', route: 'charts', icon: 'dashboard', subitems: []},
+        {name: 'Chat', route: '', icon: 'dashboard', subitems: []},
+        {name: 'Messages', route: '', icon: 'dashboard', subitems: []},
+        {name: 'Social', route: '', icon: 'dashboard', subitems: []}
       ]
     },
-    { name: 'Charts', route: 'charts', icon: 'grain', items: [] },
-    { name: 'Invoice', route: 'allInvoice', icon: 'bubble_chart', items: [] },
+    {name: 'Charts', route: 'charts', icon: 'grain', items: []},
+    {name: 'Invoice', route: 'allInvoice', icon: 'bubble_chart', items: []},
     {
       name: 'Routing', route: 'home.routing', icon: 'map',
       items: [
-        { name: 'Sub Item 1', route: 'charts', icon: 'dashboard', subitems: [] },
-        { name: 'Sub Item 2', route: '', icon: 'dashboard', subitems: [] }
+        {name: 'Sub Item 1', route: 'charts', icon: 'dashboard', subitems: []},
+        {name: 'Sub Item 2', route: '', icon: 'dashboard', subitems: []}
       ]
     },
-    { name: 'Docs', route: 'charts', icon: 'grain', items: [] },
-    { name: 'Login', route: 'charts', icon: 'grain', items: [] },
-    { name: 'Registration', route: 'charts', icon: 'grain', items: [] },
-    { name: 'Sign Up', route: 'charts', icon: 'grain', items: [] },
-    { name: '404', route: 'charts', icon: 'grain', items: [] },
+    {name: 'Docs', route: 'charts', icon: 'grain', items: []},
+    {name: 'Login', route: 'charts', icon: 'grain', items: []},
+    {name: 'Registration', route: 'charts', icon: 'grain', items: []},
+    {name: 'Sign Up', route: 'charts', icon: 'grain', items: []},
+    {name: '404', route: 'charts', icon: 'grain', items: []},
   ];
 
   private messages = [
@@ -82,10 +81,15 @@ export class DataService {
   ];
 
 
+  constructor() {
+  }
 
-  constructor() { }
+  getMenuData() {
+    return this.menu;
+  }
 
-  getMenuData() { return this.menu; }
-  getMessages() { return this.messages; }
+  getMessages() {
+    return this.messages;
+  }
 
 }

@@ -1,4 +1,4 @@
-import {BrowserModule} from '@angular/platform-browser';
+import {BrowserModule, BrowserTransferStateModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 
@@ -22,7 +22,8 @@ import {JumpToTopComponent} from './components/jump-to-top/jump-to-top.component
     JumpToTopComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'angular-material'}),
+    BrowserTransferStateModule,
     BrowserAnimationsModule,
     MaterialModule,
     RouteModule,

@@ -11,14 +11,10 @@ import {filter, tap} from 'rxjs/operators';
 export class AppComponent implements OnInit {
   navigating = true;
 
-  constructor(
-    private router: Router
-  ) {
+  constructor(private router: Router) {
     this.router.events.pipe(
       filter(event => (event instanceof NavigationStart) || (event instanceof NavigationEnd)),
-      tap(event => {
-        this.navigating = (event instanceof NavigationStart);
-      })
+      tap(event => this.navigating = (event instanceof NavigationStart))
     ).subscribe();
   }
 

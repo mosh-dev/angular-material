@@ -19,3 +19,7 @@ mat-sidenav {
   min-width: 240px;
   background-color: #f4fcff;;
 }
+
+mat-sidenav.notification_drawer {
+  max-width: 400px;
+}

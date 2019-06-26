@@ -2,7 +2,7 @@
   <mat-tab label="Today">
     <mat-card class="example-card">
       <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
+        <img matCardAvatar src="//material.angular.io/assets/img/examples/shiba1.jpg" alt="">
         <mat-card-title>Shiba Inu</mat-card-title>
         <mat-card-subtitle>Dog Breed</mat-card-subtitle>
       </mat-card-header>
@@ -24,13 +24,13 @@
         </p>
       </mat-list-item>
     </mat-nav-list>
-    <mat-card *ngFor="let dim of [0,1,3,5]" class="example-card">
+    <mat-card *ngFor="let dim of [0,1]" class="example-card">
       <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
+        <img matCardAvatar src="//material.angular.io/assets/img/examples/shiba1.jpg">
         <mat-card-title>Shiba Inu</mat-card-title>
         <mat-card-subtitle>Dog Breed</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+      <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" width="100%"
            alt="Photo of a Shiba Inu">
       <mat-card-content>
         <p>
@@ -46,18 +46,10 @@
     </mat-card>
 
   </mat-tab>
-  <mat-tab label="All Notifictions">
-    <mat-nav-list
-      *ngFor="let icon of [
-                {icon:'sms', color: 'orange660'},
-                {icon:'power', color: 'violetblue'},
-                {icon:'notifications', color: 'fb4400'},
-                {icon:'sms', color: 'yellow'},
-                {icon:'menu', color: 'green'},
-                {icon:'person', color: 'blue'}
-            ]">
+  <mat-tab label="All Notifications">
+    <mat-nav-list>
       <mat-list-item *ngFor="let message of messages">
-        <mat-icon class="violetblue" matListIcon>{{icon.icon}}</mat-icon>
+        <mat-icon matListIcon>{{message.icon}}</mat-icon>
         <h3 matLine> {{message.from}} </h3>
         <p matLine>
           <span> {{message.subject}} </span>

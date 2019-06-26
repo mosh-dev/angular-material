@@ -5,7 +5,15 @@ import {PanelComponent} from './components/panel.component';
 import {ToolbarComponent} from './components/toolbar/toolbar.component';
 import {SideNavComponent} from './components/side-nav/side-nav.component';
 import {NotificationPanelComponent} from './components/notification-panel/notification-panel.component';
-import {MatExpansionModule, MatListModule, MatSidenavModule, MatTabsModule, MatToolbarModule} from '@angular/material';
+import {
+  MatBadgeModule,
+  MatExpansionModule,
+  MatListModule,
+  MatMenuModule,
+  MatSidenavModule,
+  MatTabsModule,
+  MatToolbarModule
+} from '@angular/material';
 import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
@@ -23,6 +31,8 @@ import {SharedModule} from '../shared/shared.module';
     MatExpansionModule,
     MatListModule,
     MatTabsModule,
+    MatBadgeModule,
+    MatMenuModule,
     RouterModule.forChild([
       {
         path: '',

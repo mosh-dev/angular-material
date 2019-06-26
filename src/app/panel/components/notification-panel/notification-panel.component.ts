@@ -1,5 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
-import {MatSidenav} from '@angular/material';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-notification-panel',
@@ -7,11 +6,39 @@ import {MatSidenav} from '@angular/material';
   styleUrls: ['./notification-panel.component.scss']
 })
 export class NotificationPanelComponent {
-  messages = [];
-
-  @ViewChild(MatSidenav, {static: false}) sideNav: MatSidenav;
-
-  toggle() {
-    this.sideNav.toggle().then();
-  }
+  messages = [
+    {
+      from: 'Tushar',
+      subject: 'Example Subject',
+      content: 'Hellow Era...',
+      ...{
+        icon: 'sms', color: 'orange600'
+      }
+    },
+    {
+      from: 'Era',
+      subject: 'Example Subject',
+      content: 'Hellow Mr',
+      ...{
+        icon: 'power', color: 'blueviolet'
+      }
+    },
+    {
+      from: 'Galib',
+      subject: 'Example Subject',
+      content: 'Doctor shaheb kemon asen',
+      ...{
+        icon: 'notifications', color: 'fb4400'
+      }
+    },
+    {
+      from: 'Rocky',
+      subject: 'Example Subject',
+      content: 'Are vai koyen na. choltase konorokom',
+      ...{
+        icon: 'person',
+        color: 'blue'
+      }
+    },
+  ];
 }

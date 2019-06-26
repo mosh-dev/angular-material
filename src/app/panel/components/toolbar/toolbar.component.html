@@ -5,12 +5,36 @@
     </button>
     <a [fxHide.xs]><b>Material</b> Admin </a>
     <span fxFlex></span>
-    <button class="notification_icon" (click)="toggle(notificationPanel)" mat-icon-button>
-      <mat-icon class="notification_icon" aria-label="icon-button">notifications</mat-icon>
-      <span class="notification_badge">3</span>
-    </button>
-    <button (click)="toggle(notificationPanel)" mat-icon-button>
-      <mat-icon aria-label="icon-button">person</mat-icon>
-    </button>
+
+    <mat-form-field class="example-full-width">
+      <input type="text" matInput placeholder="Telephone">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <div>
+      <button (click)="toggle(notificationPanel)" mat-icon-button>
+        <mat-icon matBadge="4" matBadgeColor="accent" class="notification_icon" aria-label="icon-button">notifications
+        </mat-icon>
+      </button>
+      <button [matMenuTriggerFor]="userMenu" mat-icon-button>
+        <img matCardAvatar src="//material.angular.io/assets/img/examples/shiba1.jpg">
+      </button>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>
+
+
+<mat-menu #userMenu="matMenu">
+  <mat-list>
+    <mat-list-item>
+      Moshiour Rahman<br>
+    </mat-list-item>
+  </mat-list>
+  <button mat-menu-item disabled>
+    <mat-icon>voicemail</mat-icon>
+    <span>Check voice mail</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+</mat-menu>

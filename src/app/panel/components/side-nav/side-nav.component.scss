@@ -3,6 +3,10 @@ mat-nav-list > a span, mat-panel-title > span {
   margin-left: 8px;
 }
 
+mat-nav-list.active {
+  background-color: white;
+}
+
 
 mat-expansion-panel {
   background: none;
@@ -11,6 +15,10 @@ mat-expansion-panel {
 
   mat-expansion-panel-header {
     padding: 0 16px !important;
+  }
+
+  mat-expansion-panel-header.active {
+    background-color: white;
   }
 }
 

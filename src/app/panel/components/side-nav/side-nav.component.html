@@ -22,11 +22,7 @@
 
             <!-- 3RD Level -->
             <mat-nav-list>
-              <a
-                *ngFor="let subItem of subItem.subMenu"
-                [routerLink]="subItem.route"
-                routerLinkActive="active"
-                mat-list-item>
+              <a *ngFor="let subItem of subItem.subMenu" [routerLink]="subItem.route" mat-list-item>
                 <span>{{subItem.title}}</span>
               </a>
             </mat-nav-list>
@@ -36,7 +32,7 @@
 
         <!-- This is 2nd level submenu item -->
         <mat-nav-list *ngIf="!(subItem.subMenu || []).length">
-          <a routerLinkActive="active" [routerLink]="subItem.route" mat-list-item>
+          <a [routerLink]="subItem.route" mat-list-item>
             <span>{{subItem.title}}</span>
           </a>
         </mat-nav-list>
@@ -49,7 +45,7 @@
 
     <!-- This Is rendered when there is no submenu item -->
     <mat-nav-list *ngIf="!(item.subMenu || []).length">
-      <a routerLinkActive="active" [routerLink]="item.route" mat-list-item>
+      <a [routerLink]="item.route" mat-list-item>
         <mat-icon class="md-24">{{item.icon}}</mat-icon>
         <span>{{item.title}}</span>
       </a>

@@ -1,6 +1,20 @@
 import {Component, ViewChild, AfterViewInit} from '@angular/core';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 
+/** Constants used to fill up our data base. */
+const COLORS = ['maroon', 'red', 'orange', 'yellow', 'olive', 'green', 'purple',
+  'fuchsia', 'lime', 'teal', 'aqua', 'blue', 'navy', 'black', 'gray'];
+const NAMES = ['Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack',
+  'Charlotte', 'Theodore', 'Isla', 'Oliver', 'Isabella', 'Jasper',
+  'Cora', 'Levi', 'Violet', 'Arthur', 'Mia', 'Thomas', 'Elizabeth'];
+
+interface UserData {
+  id: string;
+  name: string;
+  progress: string;
+  color: string;
+}
+
 @Component({
   selector: 'app-data-table',
   templateUrl: './data-table.component.html',
@@ -51,18 +65,4 @@ function createNewUser(id: number): UserData {
     progress: Math.round(Math.random() * 100).toString(),
     color: COLORS[Math.round(Math.random() * (COLORS.length - 1))]
   };
-}
-
-/** Constants used to fill up our data base. */
-const COLORS = ['maroon', 'red', 'orange', 'yellow', 'olive', 'green', 'purple',
-  'fuchsia', 'lime', 'teal', 'aqua', 'blue', 'navy', 'black', 'gray'];
-const NAMES = ['Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack',
-  'Charlotte', 'Theodore', 'Isla', 'Oliver', 'Isabella', 'Jasper',
-  'Cora', 'Levi', 'Violet', 'Arthur', 'Mia', 'Thomas', 'Elizabeth'];
-
-export interface UserData {
-  id: string;
-  name: string;
-  progress: string;
-  color: string;
 }

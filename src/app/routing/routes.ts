@@ -4,11 +4,11 @@ import {LandingComponent} from '../components/landing/landing.component';
 export const ROUTES: Routes = [
   {
     path: '',
-    loadChildren: () => import('../panel/panel.module').then(m => m.PanelModule)
+    component: LandingComponent
   },
   {
-    path: 'landing',
-    component: LandingComponent
+    path: 'dashboard',
+    loadChildren: () => import('../panel/panel.module').then(m => m.PanelModule)
   },
   {
     path: '**', redirectTo: ''

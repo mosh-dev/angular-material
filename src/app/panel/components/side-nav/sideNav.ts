@@ -10,7 +10,7 @@ export interface SideNavMenuItem {
 export const sideNavMenuItems: Array<SideNavMenuItem> = [
   {
     title: 'Dashboard',
-    route: '',
+    route: '/dashboard',
     icon: 'view_quilt'
   },
   {
@@ -30,7 +30,7 @@ export const sideNavMenuItems: Array<SideNavMenuItem> = [
   },
   {
     title: 'Landing',
-    route: 'landing',
+    route: '',
     icon: 'view_quilt'
   },
 ];

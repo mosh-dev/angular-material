@@ -8,7 +8,7 @@ export const ROUTES: Routes = [
   },
   {
     path: 'dashboard',
-    loadChildren: () => import('../panel/panel.module').then(m => m.PanelModule)
+    loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path: '**', redirectTo: ''

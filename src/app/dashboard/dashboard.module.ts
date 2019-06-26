@@ -40,7 +40,7 @@ import {SharedModule} from '../shared/shared.module';
         children: [
           {
             path: '',
-            loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+            loadChildren: () => import('./summery/summery.module').then(m => m.SummeryModule)
           },
           {
             path: 'data-table',
@@ -51,5 +51,5 @@ import {SharedModule} from '../shared/shared.module';
     ])
   ]
 })
-export class PanelModule {
+export class DashboardModule {
 }

@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  templateUrl: './summery.component.html',
+  styleUrls: ['./summery.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class SummeryComponent implements OnInit {
 
   constructor() { }
 

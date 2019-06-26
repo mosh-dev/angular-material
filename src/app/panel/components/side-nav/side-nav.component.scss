@@ -1,0 +1,31 @@
+mat-nav-list > a span, mat-panel-title > span {
+  font-size: 1.2rem;
+  margin-left: 8px;
+}
+
+
+mat-expansion-panel {
+  background: none;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+  mat-expansion-panel-header {
+    padding: 0 16px !important;
+  }
+}
+
+mat-panel-title > span {
+  line-height: 1.6;
+}
+
+.mat-expansion-panel-spacing {
+  margin: 0;
+}
+
+.mat-list-base {
+  padding-top: 0;
+}
+
+mat-nav-list, mat-expansion-panel {
+  border-bottom: 1px solid #f2f2f2;
+}

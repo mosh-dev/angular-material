@@ -1,13 +1,14 @@
 import {Routes} from '@angular/router';
+import {LandingComponent} from '../components/landing/landing.component';
 
 export const ROUTES: Routes = [
   {
     path: '',
-    loadChildren: () => import('../features/dashboard/dashboard.module').then(m => m.DashboardModule)
+    loadChildren: () => import('../panel/panel.module').then(m => m.PanelModule)
   },
   {
-    path: 'dataTable',
-    loadChildren: () => import('../features/data-table/data-table.module').then(m => m.DataTableModule)
+    path: 'landing',
+    component: LandingComponent
   },
   {
     path: '**', redirectTo: ''

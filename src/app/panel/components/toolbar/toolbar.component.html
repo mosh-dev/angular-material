@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button (click)="toggle(sidenav)" mat-icon-button>
+      <mat-icon aria-label="icon-button">menu</mat-icon>
+    </button>
+    <a [fxHide.xs]><b>Material</b> Admin </a>
+    <span fxFlex></span>
+    <button class="notification_icon" (click)="toggle(notificationPanel)" mat-icon-button>
+      <mat-icon class="notification_icon" aria-label="icon-button">notifications</mat-icon>
+      <span class="notification_badge">3</span>
+    </button>
+    <button (click)="toggle(notificationPanel)" mat-icon-button>
+      <mat-icon aria-label="icon-button">person</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,15 @@
+<app-toolbar [sidenav]="sidenav" [notificationPanel]="notificationPanel"></app-toolbar>
+<mat-sidenav-container>
+  <!--LEFT DRAWER-->
+  <mat-sidenav [mode]="(isMobile | async) ? 'over' : 'side'" [opened]="!(isMobile | async)" #sidenav>
+    <app-side-nav></app-side-nav>
+  </mat-sidenav>
+  <!--RIGHT DRAWER-->
+  <mat-sidenav class="notification_drawer" mode="over" position="end" #notificationPanel>
+    <app-notification-panel></app-notification-panel>
+  </mat-sidenav>
+  <!--Content-->
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

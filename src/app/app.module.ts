@@ -2,7 +2,7 @@ import {BrowserModule, BrowserTransferStateModule} from '@angular/platform-brows
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {AppComponent} from './components/app.component';
-import {RoutingModule} from './routing/routing.module';
+import {AppRoutingModule} from './app-routing/app-routing.module';
 import {LandingComponent} from './components/landing/landing.component';
 import {MatProgressBarModule, MatProgressSpinnerModule} from '@angular/material';
 import {CommonModule} from '@angular/common';
@@ -18,7 +18,7 @@ import {CommonModule} from '@angular/common';
     BrowserModule.withServerTransition({appId: 'angular-material'}),
     BrowserTransferStateModule,
     BrowserAnimationsModule,
-    RoutingModule,
+    AppRoutingModule,
     MatProgressBarModule,
     MatProgressSpinnerModule
   ],

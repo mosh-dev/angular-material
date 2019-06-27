@@ -6,6 +6,8 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import {LandingComponent} from './components/landing/landing.component';
 import {MatProgressBarModule, MatProgressSpinnerModule} from '@angular/material';
 import {CommonModule} from '@angular/common';
+import {AuthModule} from './auth/auth.module';
+import {SharedModule} from './shared/shared.module';
 
 
 @NgModule({
@@ -18,9 +20,11 @@ import {CommonModule} from '@angular/common';
     BrowserModule.withServerTransition({appId: 'angular-material'}),
     BrowserTransferStateModule,
     BrowserAnimationsModule,
+    SharedModule,
     AppRoutingModule,
     MatProgressBarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    AuthModule
   ],
   bootstrap: [AppComponent]
 })

@@ -1,7 +1,7 @@
 <!-- <mat-card> -->
     <div class="example-header">
       <mat-form-field>
-        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Type to filter">
+        <input matInput (keyup)="applyFilter(inputElement.value)" placeholder="Type to filter" #inputElement>
       </mat-form-field>
     </div>
 

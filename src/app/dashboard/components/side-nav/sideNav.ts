@@ -14,23 +14,73 @@ export const sideNavMenuItems: Array<SideNavMenuItem> = [
     icon: 'view_quilt'
   },
   {
-    title: 'Nested Menu',
-    route: '',
-    icon: 'view_list',
+    title: 'Invoice',
+    route: '/dashboard',
+    icon: 'view_quilt'
+  },
+  {
+    title: 'Purchase Orders',
+    route: '/dashboard',
+    icon: 'view_quilt'
+  },
+  {
+    title: 'Credit Memos',
+    route: '/dashboard',
+    icon: 'work_outline'
+  },
+  {
+    title: 'Estimates',
+    route: '/dashboard',
+    icon: 'view_quilt'
+  },
+  {
+    title: 'Clients',
+    route: '/dashboard',
+    icon: 'view_quilt'
+  },
+  {
+    title: 'Items',
+    route: '/dashboard',
+    icon: 'view_quilt'
+  },
+  {
+    title: 'Settings',
+    route: '/dashboard',
+    icon: 'settings',
     subMenu: [
       {
-        title: 'Data table', route: 'newInvoice', icon: 'view_module',
-        subMenu: [
-          {title: 'Data table', route: 'data-table'},
-          {title: 'Sub sub item 2', route: ''}
-        ]
+        title: 'Company info', route: '/dashboard', icon: 'view_module',
       },
-      {title: 'Sub item 2', route: 'allInvoice', icon: 'dashboard'}
+      {
+        title: 'Trading info', route: '/dashboard', icon: 'dashboard'
+      },
+      {
+        title: 'Email setup', route: '/dashboard', icon: 'dashboard'
+      },
+      {
+        title: 'Team member', route: '/dashboard', icon: 'dashboard'
+      },
+      {
+        title: 'Other settings', route: '/dashboard', icon: 'dashboard'
+      }
     ]
   },
   {
-    title: 'Landing',
+    title: 'Nested Menu',
     route: '',
-    icon: 'view_quilt'
+    icon: 'table_chart',
+    subMenu: [
+      {title: 'Data table', route: 'data-table'},
+    ]
+  },
+  {
+    title: 'Reports',
+    route: '',
+    icon: 'bubble_chart'
+  },
+  {
+    title: 'Help',
+    route: '',
+    icon: 'help_outline'
   },
 ];

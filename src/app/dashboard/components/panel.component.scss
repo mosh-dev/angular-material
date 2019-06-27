@@ -1,5 +1,9 @@
 :host {
   height: calc(100% - 64px);
+
+  > div {
+    height: 100%;
+  }
 }
 
 mat-sidenav-container {

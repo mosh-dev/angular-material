@@ -6,10 +6,9 @@
     <a [fxHide.xs]><b>Material</b> Admin </a>
     <span fxFlex></span>
 
-    <mat-form-field class="example-full-width">
-      <input type="text" matInput placeholder="Telephone">
-      <mat-icon matSuffix>mode_edit</mat-icon>
-    </mat-form-field>
+    <button mat-icon-button (click)="toggleColor.emit()">
+      <mat-icon>invert_colors</mat-icon>
+    </button>
     <div>
       <button (click)="toggle(notificationPanel)" mat-icon-button>
         <mat-icon matBadge="4" matBadgeColor="accent" class="notification_icon" aria-label="icon-button">notifications
@@ -36,5 +35,9 @@
   <button mat-menu-item>
     <mat-icon>notifications_off</mat-icon>
     <span>Disable alerts</span>
+  </button>
+  <button (click)="logout()" mat-menu-item>
+    <mat-icon>exit_to_app</mat-icon>
+    <span>Sign out</span>
   </button>
 </mat-menu>

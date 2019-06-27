@@ -1,5 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {MatSidenav} from '@angular/material';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -10,7 +11,9 @@ export class ToolbarComponent implements OnInit {
   @Input() sidenav: MatSidenav;
   @Input() notificationPanel: MatSidenav;
 
-  constructor() {
+  @Output() toggleColor = new EventEmitter();
+
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
@@ -18,6 +21,10 @@ export class ToolbarComponent implements OnInit {
 
   toggle(nav: MatSidenav) {
     nav.toggle().then();
+  }
+
+  logout() {
+    this.router.navigate(['/login']).then();
   }
 
 }

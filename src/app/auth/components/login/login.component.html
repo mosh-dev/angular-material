@@ -1,0 +1,30 @@
+<mat-card>
+  <div id="logo-name">
+    <a href="javascript:" routerLink="/">
+      <img id="header-img" src="https://image.flaticon.com/icons/svg/831/831763.svg" alt="company-logo">
+    </a>
+    <p id="company-name">Company name</p>
+  </div>
+  <div style="height: 24px"></div>
+  <mat-card-content>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <mat-form-field>
+        <label>
+          <input type="text" matInput placeholder="Username" formControlName="username">
+        </label>
+      </mat-form-field>
+
+      <mat-form-field>
+        <label>
+          <input type="password" matInput placeholder="Password" formControlName="password">
+        </label>
+      </mat-form-field>
+
+      <div class="button">
+        <button type="submit" color="primary" mat-stroked-button>Login</button>
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>
+

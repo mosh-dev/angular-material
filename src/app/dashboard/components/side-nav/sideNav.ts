@@ -14,8 +14,13 @@ export const sideNavMenuItems: Array<SideNavMenuItem> = [
     icon: 'view_quilt'
   },
   {
+    title: 'Statistics',
+    route: '/statistics',
+    icon: 'view_quilt'
+  },
+  {
     title: 'Invoice',
-    route: '/dashboard',
+    route: '/dashboard/data-table',
     icon: 'view_quilt'
   },
   {

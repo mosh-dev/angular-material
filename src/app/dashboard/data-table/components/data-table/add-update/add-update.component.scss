@@ -1,0 +1,9 @@
+.example-container {
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}

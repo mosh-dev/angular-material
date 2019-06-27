@@ -25,8 +25,9 @@ export class PanelComponent implements OnInit {
 
 
   toggleColor() {
-    this.updateTheme();
+    this.overlayContainer.getContainerElement().classList.remove(this.activeTheme);
     this.activeTheme = (this.activeTheme === MaterialThemes.LIGHT) ? MaterialThemes.DARK : MaterialThemes.LIGHT;
+    this.updateTheme();
     LocalStorageService.setItem(LocalStorageKeys.activeTheme, this.activeTheme);
   }
 

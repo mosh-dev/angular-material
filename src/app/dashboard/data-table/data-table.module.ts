@@ -2,12 +2,22 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {DataTableComponent} from './components/data-table/data-table.component';
 import {RouterModule} from '@angular/router';
-import {MatFormFieldModule, MatPaginatorModule, MatSortModule, MatTableModule} from '@angular/material';
+import {
+  MatCheckboxModule,
+  MatDialogModule,
+  MatFormFieldModule,
+  MatPaginatorModule,
+  MatSelectModule,
+  MatSortModule,
+  MatTableModule
+} from '@angular/material';
 import {SharedModule} from '../../shared/shared.module';
+import {AddUpdateComponent} from './components/data-table/add-update/add-update.component';
 
 @NgModule({
   declarations: [
-    DataTableComponent
+    DataTableComponent,
+    AddUpdateComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +31,13 @@ import {SharedModule} from '../../shared/shared.module';
     MatTableModule,
     MatFormFieldModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatCheckboxModule
+  ],
+  entryComponents: [
+    AddUpdateComponent
   ]
 })
 export class DataTableModule {

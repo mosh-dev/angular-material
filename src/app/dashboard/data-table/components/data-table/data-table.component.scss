@@ -16,5 +16,19 @@
 
 .mat-table {
   overflow: auto;
-  max-height: 500px;
+  max-height: 640px;
+}
+
+.mat-header-cell:last-child {
+  flex: 0 0 7%;
+}
+
+.mat-cell:last-child {
+  flex: 0 0 7%;
+}
+
+
+.mat-column-select {
+  overflow: initial;
+  border-bottom: none;
 }

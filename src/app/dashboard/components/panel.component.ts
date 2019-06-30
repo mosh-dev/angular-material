@@ -11,7 +11,8 @@ import {LocalStorageService} from '../../storage-classes/localStorage';
   styleUrls: ['./panel.component.scss']
 })
 export class PanelComponent implements OnInit {
-  activeTheme = LocalStorageService.getItem(LocalStorageKeys.activeTheme) || MaterialThemes.LIGHT;
+  // activeTheme = LocalStorageService.getItem(LocalStorageKeys.activeTheme) || MaterialThemes.LIGHT;
+  activeTheme = '';
 
   constructor(
     private appService: AppService,
@@ -25,14 +26,14 @@ export class PanelComponent implements OnInit {
 
 
   toggleColor() {
-    this.overlayContainer.getContainerElement().classList.remove(this.activeTheme);
-    this.activeTheme = (this.activeTheme === MaterialThemes.LIGHT) ? MaterialThemes.DARK : MaterialThemes.LIGHT;
-    this.updateTheme();
-    LocalStorageService.setItem(LocalStorageKeys.activeTheme, this.activeTheme);
+    // this.overlayContainer.getContainerElement().classList.remove(this.activeTheme);
+    // this.activeTheme = (this.activeTheme === MaterialThemes.LIGHT) ? MaterialThemes.DARK : MaterialThemes.LIGHT;
+    // this.updateTheme();
+    // LocalStorageService.setItem(LocalStorageKeys.activeTheme, this.activeTheme);
   }
 
   private updateTheme() {
-    this.overlayContainer.getContainerElement().classList.add(this.activeTheme);
+    // this.overlayContainer.getContainerElement().classList.add(this.activeTheme);
   }
 
   ngOnInit(): void {

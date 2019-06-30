@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {NavigationEnd, NavigationStart, Router} from '@angular/router';
 import {filter, tap} from 'rxjs/operators';
 
@@ -8,7 +8,7 @@ import {filter, tap} from 'rxjs/operators';
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   navigating = true;
 
   constructor(private router: Router) {
@@ -16,8 +16,5 @@ export class AppComponent implements OnInit {
       filter(event => (event instanceof NavigationStart) || (event instanceof NavigationEnd)),
       tap(event => this.navigating = (event instanceof NavigationStart))
     ).subscribe();
-  }
-
-  ngOnInit(): void {
   }
 }

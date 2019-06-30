@@ -44,7 +44,7 @@
 
 
     <!-- This Is rendered when there is no submenu item -->
-    <mat-nav-list *ngIf="!(item.subMenu || []).length">
+    <mat-nav-list *ngIf="!(item.subMenu || []).length" routerLinkActive="active">
       <a [routerLink]="item.route" mat-list-item>
         <mat-icon class="md-24">{{item.icon}}</mat-icon>
         <span>{{item.title}}</span>

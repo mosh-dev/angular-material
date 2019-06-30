@@ -15,7 +15,6 @@ import {
   MatToolbarModule
 } from '@angular/material';
 import {SharedModule} from '../shared/shared.module';
-import {WeatherService} from './services/weather.service';
 
 @NgModule({
   declarations: [

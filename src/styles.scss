@@ -1,7 +1,7 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "assets/styles/matIcons";
-
 @import "~@angular/material/theming";
+
 @include mat-core();
 
 $my-theme-primary: mat-palette($mat-cyan, 800, 700, 900);
@@ -39,7 +39,6 @@ $my-second-theme: mat-dark-theme(
 }
 
 
-
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -65,4 +64,111 @@ app-root {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+
+/**
+Fuse
+ */
+
+.p-24 {
+  padding: 24px !important;
+}
+
+
+.line-height-1 {
+  line-height: 1;
+}
+.blue-700 {
+  background-color: #1976d2 !important;
+  color: white !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.border-radius-2 {
+  border-radius: 2px;
+}
+.px-12 {
+  padding-right: 12px !important;
+  padding-left: 12px !important;
+}
+.py-8 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+.mr-8 {
+  margin-right: 8px !important;
+}
+
+.h-256 {
+  min-height: 256px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.pb-24 {
+  padding-bottom: 24px !important;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+.font-size-54 {
+  font-size: 54px;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.fuse-card {
+  background: white;
+}
+
+.fuse-card {
+  max-width: 320px;
+  min-width: 320px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+.py-4 {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+.pr-16 {
+  padding-right: 16px !important;
+}
+
+.p-24 {
+  padding: 24px !important;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.pb-16 {
+  padding-bottom: 16px !important;
+}
+.h-368 {
+  height: 368px !important;
+  min-height: 368px !important;
+  max-height: 368px !important;
+}
+
+.text-nowrap {
+  white-space: nowrap;
 }

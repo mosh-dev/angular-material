@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'app-summery',
   templateUrl: './summery.component.html',
   styleUrls: ['./summery.component.scss']
 })

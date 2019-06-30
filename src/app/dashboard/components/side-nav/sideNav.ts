@@ -15,7 +15,7 @@ export const sideNavMenuItems: Array<SideNavMenuItem> = [
   },
   {
     title: 'Statistics',
-    route: '/statistics',
+    route: '/dashboard/statistics',
     icon: 'view_quilt'
   },
   {

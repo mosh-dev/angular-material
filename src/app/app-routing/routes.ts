@@ -15,6 +15,10 @@ export const ROUTES: Routes = [
     component: LoginComponent
   },
   {
+    path: 'nebular',
+    loadChildren: () => import('../nebular/nebular.module').then(m => m.NebularModule)
+  },
+  {
     path: '**', redirectTo: ''
   }
 ];

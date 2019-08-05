@@ -71,12 +71,9 @@ export const sideNavMenuItems: Array<SideNavMenuItem> = [
     ]
   },
   {
-    title: 'Nested Menu',
-    route: '',
+    title: 'Nebular',
+    route: 'nebular',
     icon: 'table_chart',
-    subMenu: [
-      {title: 'Data table', route: 'data-table'},
-    ]
   },
   {
     title: 'Reports',

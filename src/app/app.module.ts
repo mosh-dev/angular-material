@@ -1,7 +1,7 @@
 import {BrowserModule, BrowserTransferStateModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
-import {AppComponent} from './components/app.component';
+import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {LandingComponent} from './components/landing/landing.component';
 import {MatProgressBarModule, MatProgressSpinnerModule} from '@angular/material';

@@ -1,18 +1,13 @@
 import {Routes} from '@angular/router';
-import {LoginComponent} from '../auth/components/login/login.component';
 
 export const ROUTES: Routes = [
   {
-    path: '',
+    path: 'abc',
     loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path: 'dashboard',
     loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule)
-  },
-  {
-    path: 'login',
-    component: LoginComponent
   },
   {
     path: 'nebular',

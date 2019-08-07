@@ -31,7 +31,8 @@
               "node_modules/@nebular/theme/styles/prebuilt/default.css"
             ],
             "scripts": [],
-            "es5BrowserSupport": true
+            "es5BrowserSupport": true,
+            "lazyModules": []
           },
           "configurations": {
             "production": {
@@ -45,7 +46,7 @@
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
-              "namedChunks": false,
+              "namedChunks": true,
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,

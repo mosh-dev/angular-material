@@ -6,14 +6,15 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import {LandingComponent} from './components/landing/landing.component';
 import {MatProgressBarModule, MatProgressSpinnerModule} from '@angular/material';
 import {CommonModule} from '@angular/common';
-import {AuthModule} from './auth/auth.module';
 import {SharedModule} from './shared/shared.module';
+import {HostDirective} from './host.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    HostDirective
   ],
   imports: [
     CommonModule,
@@ -23,8 +24,10 @@ import {SharedModule} from './shared/shared.module';
     SharedModule,
     AppRoutingModule,
     MatProgressBarModule,
-    MatProgressSpinnerModule,
-    AuthModule
+    MatProgressSpinnerModule
+  ],
+  exports: [
+    LandingComponent
   ],
   bootstrap: [AppComponent]
 })

@@ -50,6 +50,10 @@ import {SharedModule} from '../shared/shared.module';
       }
     ])
   ],
+  exports: [
+    ToolbarComponent,
+    PanelComponent
+  ],
   providers: []
 })
 export class DashboardModule {
